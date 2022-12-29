@@ -1,6 +1,3 @@
-// script-version16
-// Заменены символы операторов на постоянные
-
 // ПЕРЕМЕННЫЕ
 // смещение последующих сот вверх, для плотного примыкания их друг к другу
 // в ряду по высоте
@@ -164,7 +161,7 @@ function numberPressed(buttonText) {
 }
 
 function removePressed() {
-  console.log("removePressed()");
+  // console.log("removePressed()");
   switch (true) {
     case stateBeforeSettingNum2:
       break;
@@ -199,7 +196,7 @@ function removePressed() {
 }
 
 function buttonPressed(buttonText) {
-  console.log("buttonPressed()", buttonText);
+  // console.log("buttonPressed()", buttonText);
   // if (buttonText === "*") buttonText = "\u2715";
   switch (true) {
     case buttonText === buttonEdit:
@@ -333,7 +330,7 @@ const handleKeyboard = (event) => {
 window.addEventListener("keydown", handleKeyboard);
 
 function logState() {
-  console.log(
+  // console.log(
     "num1=",
     num1,
     " num2=",
