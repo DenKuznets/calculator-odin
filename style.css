@@ -1,0 +1,235 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Gemunu Libre", sans-serif;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 150%;
+  width: 380px;
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.row {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.row,
+.sota-container,
+.sota {
+  pointer-events: none;
+}
+
+.wh-big {
+  width: 90%;
+  height: 90%;
+}
+
+.wh-small {
+  width: 60%;
+  height: 60%;
+}
+
+.fs-small {
+  font-size: 170%;
+}
+
+.fs-big {
+  font-size: 130%;
+}
+
+.background {
+  border-radius: 3px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: lightslategray;
+  width: 380px;
+  height: 490px;
+  max-width: 380px;
+  max-height: 490px;
+  box-shadow: 10px 5px 5px rgba(169, 196, 194, 0.575);
+}
+
+.display-container {
+  margin: 50px auto 0;
+  border: 3px solid rgb(109, 55, 55);
+  outline: 5px solid rgba(109, 55, 55, 0.3);
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+}
+
+.display {
+  margin: auto;
+  width: 100%;
+  background-color: blanchedalmond;
+  font-size: 200%;
+  text-align: right;
+  font-family: "Chakra Petch", sans-serif;
+  padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#display2 {
+  height: 30px;
+  font-size: 15px;
+  position: relative;
+  top: -1px;
+}
+
+.rows-container {
+  margin: 20px auto;
+  display: flex;
+  width: 80%;
+}
+
+.row {
+  width: 20%;
+}
+
+.sota-container {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  position: relative;
+}
+
+.sota-border {
+  pointer-events: visible;
+  display: flex;
+  background-color: rgb(109, 55, 55);
+  width: 100%;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+          clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  cursor: pointer;
+}
+
+.sota {
+  margin: auto;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+          clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#row1 {
+  left: 24px;
+}
+
+#row2,
+#row4 {
+  top: 26px;
+}
+
+#row2 {
+  left: 12px;
+}
+
+#row4 {
+  right: 11px;
+}
+
+#row5 {
+  right: 23px;
+}/*# sourceMappingURL=style.css.map */
