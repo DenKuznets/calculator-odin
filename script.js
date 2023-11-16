@@ -331,7 +331,7 @@ const handleKeyboard = (event) => {
 window.addEventListener("keydown", handleKeyboard);
 
 function logState() {
-  // console.log(
+  console.log(
     "num1=",
     num1,
     " num2=",
